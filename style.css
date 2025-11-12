@@ -15,7 +15,6 @@ body {
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
-    
 }
 
 body::before {
@@ -26,15 +25,14 @@ body::before {
     width: 100%;
     height: 100%;
     background: 
-        url('fund.png') center/cover no-repeat, /*Imagem escura de fundo*/
+        url('d.WEBP') center/cover no-repeat,
         radial-gradient(circle at 20% 80%, rgba(139, 69, 19, 0.4) 0%, transparent 50%),
         radial-gradient(circle at 80% 20%, rgba(101, 67, 33, 0.3) 0%, transparent 50%);
     z-index: -1;
-    opacity: 50; /*clarear imagem de fundo*/
+    opacity: 0.15;
 }
 
 .header-container {
-    
     background: linear-gradient(135deg, rgba(101, 67, 33, 0.9) 0%, rgba(139, 69, 19, 0.8) 100%);
     padding: 80px 25px 40px;
     margin-bottom: 30px;
@@ -44,12 +42,6 @@ body::before {
     border-bottom: 4px solid #8B4513;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Alinha verticalmente o título e subtítulo */
-    text-align: center; /* Centraliza o texto */
 }
 
 .header-container::before {
@@ -59,7 +51,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('fundo.png') center/cover no-repeat; /* Imagem de fundo do banner */
+    background: url('d.WEBP') center/cover no-repeat;
     opacity: 0.3;
     z-index: -1;
 }
@@ -75,7 +67,11 @@ body::before {
     animation: shimmer 4s infinite;
 }
 
-/* Estilo do título */
+@keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
 h1 {
     font-size: 3.5rem;
     margin-bottom: 20px;
@@ -118,7 +114,6 @@ h1::after {
     background: linear-gradient(90deg, transparent, #d4af37, transparent);
 }
 
-/* Estilo do subtítulo */
 .subtitle {
     font-size: 1.5rem;
     color: #e8d5b5;
@@ -130,7 +125,6 @@ h1::after {
     position: relative;
     display: inline-block;
     padding: 0 20px;
-    margin-top: 10px; /* Adiciona espaço entre o título e o subtítulo */
 }
 
 .subtitle::before, .subtitle::after {
@@ -148,19 +142,6 @@ h1::after {
 
 .subtitle::after {
     right: 0;
-}
-
-/* Animação de brilho do título */
-@keyframes shimmer {
-    0% {
-        left: -100%;
-    }
-    50% {
-        left: 100%;
-    }
-    100% {
-        left: -100%;
-    }
 }
 
 .main-container {

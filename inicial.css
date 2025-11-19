@@ -30,7 +30,7 @@ body::before {
         radial-gradient(circle at 20% 80%, rgba(139, 69, 19, 0.4) 0%, transparent 50%),
         radial-gradient(circle at 80% 20%, rgba(101, 67, 33, 0.3) 0%, transparent 50%);
     z-index: -1;
-    opacity: 50; /*clarear imagem de fundo*/
+    opacity: 0.5; /*clarear imagem de fundo*/
 }
 
 .header-container {

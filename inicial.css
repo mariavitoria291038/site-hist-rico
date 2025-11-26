@@ -338,7 +338,7 @@ h1::after {
 }
 
 .story-list li:hover {
-    transform: translateY(-8px) scale(1.01);
+    transform: translateY(-8px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
     background: linear-gradient(135deg, rgba(160, 82, 45, 0.8) 0%, rgba(139, 69, 19, 0.7) 100%);
     border-color: #d4af37;
@@ -369,7 +369,6 @@ h1::after {
 }
 
 .story-list li:hover .story-image {
-    transform: scale(1.08);
     border-color: rgba(212, 175, 55, 0.5);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
 }
@@ -383,7 +382,6 @@ h1::after {
 }
 
 .story-list li:hover .story-image img {
-    transform: scale(1.1);
     filter: sepia(0.1) brightness(1);
 }
 
